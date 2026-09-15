@@ -1,0 +1,25 @@
+#utilities 
+
+numpy
+pandas
+
+# face recognition
+scikit-learn
+#ye btata hai ki ye face kiska hai
+dlib-bin
+
+git+https://github.com/ageitgey/face_recognition_models
+setuptools<70.0.0
+#database 
+supabase
+#password ko hexacode me convertkar deta hai
+bcrypt
+
+#bar code me covert kar deta hai link ko
+segno
+
+#image ko pre-process karne me madat karta hai 
+pillow
+
+#UI banane ke liye
+streamlit
