@@ -245,7 +245,7 @@ def teacher_tab_attendance_records():
                 "Time": datetime.fromisoformat(ts).strftime("%Y-%m-%d %I:%M %p") if ts else "N'A",
                 "Subject": r["subject"]["name"],
                 "Subject Code": r["subject"]["subject_code"],
-                "is_present": bool(r.get("is_present,", False))
+                "is_present": bool(r.get("is_present", False))
                     
                 
             })
