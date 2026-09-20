@@ -40,7 +40,7 @@ def style_base_layout_dashboard():
         """
           <style>
             .stApp{
-                background: #4F46E5 !important;
+                background: #E0E3FF !important;
             
             }
           </style>
@@ -67,7 +67,7 @@ def style_base_layout():
           }
           h1{
               font-family: "Space Grotesk", sans-serif !important;
-              font-size: 3.5rem !important;
+              font-size: 3rem !important;
               line-height:1.1 !important;
               margin-bottom : 0rem !important;
               color: #000000 !important;
@@ -94,7 +94,7 @@ def style_base_layout():
           
           button[kind="secondary"]{
               border-radius: 1.5rem !important;
-              background: #0F766E !important;
+              background: #0D9488 !important;
               color: white !important;
               padding: 10px 20px !important;
               border: none !important;
@@ -104,7 +104,7 @@ def style_base_layout():
           
           button[kind="tertiary"]{
                         border-radius: 1.5rem !important;
-                        background: #E8EAF3 !important;
+                        background: #F59E0B !important;
                         color: white !important;
                         padding: 10px 20px !important;
                         border: none !important;
@@ -114,7 +114,7 @@ def style_base_layout():
          
          button[kind="primary"]{
                        border-radius: 1.5rem !important;
-                       background: #4F46E5 !important;
+                       background: #6366F1 !important;
                        color: white !important;
                        padding: 10px 20px !important;
                        border: none !important;
@@ -125,6 +125,15 @@ def style_base_layout():
          button:hover{
              transform: scale(1.05)
          }
+         
+         /* Text input labels */
+          div[data-testid="stTextInput"] label,
+           div[data-testid="stTextInput"] label p {
+            color: #000000 !important;
+         }
+
+          
+           
            
         </style>
          

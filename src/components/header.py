@@ -12,3 +12,18 @@ def header_home():
                 
                 """, unsafe_allow_html=True)
  
+ 
+ 
+ 
+ 
+def header_dashboard():
+    logo_url = "https://static.vecteezy.com/system/resources/previews/014/467/176/large_2x/recruitment-accepted-illustration-3d-png.png"
+    st.markdown(f"""
+              <div style= "display: flex;  align-items: center; justify-content: center; gap:10px; margin-top: px;">  
+                <img src="{logo_url}" style= " height:85px;"/>
+                <h2 style= 'text-align: center; color: #5865F2'> Haziri AI </h2>
+                
+             </div>  
+                
+                
+                """, unsafe_allow_html=True) 

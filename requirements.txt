@@ -1,4 +1,6 @@
 #utilities 
+#UI banane ke liye
+streamlit
 
 numpy
 pandas
@@ -21,5 +23,7 @@ segno
 #image ko pre-process karne me madat karta hai 
 pillow
 
-#UI banane ke liye
-streamlit
+
+
+librosa
+resemblyzer
