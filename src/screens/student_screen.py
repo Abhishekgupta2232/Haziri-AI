@@ -94,11 +94,12 @@ def student_screen():
                 header_dashboard()
             with c2:
                 
-             if st.button("Go Back To Home", type="secondary", key="loginbackbtn", shortcut="Control+Backspace"):
-                st.session_state["login_type"] = None
-                st.rerun()    
+                if st.button("Go Back To Home", type="secondary", key="loginbackbtn", shortcut="Control+Backspace"):
+                 st.session_state["login_type"] = None
+                 st.rerun()    
             
             st.header("Login Using FaceID", text_alignment="center")
+            st.space() 
             st.space() 
             show_registration = False
             
@@ -131,12 +132,12 @@ def student_screen():
                             show_registration = True
                                     
             if show_registration:
-             with st.container(border=True):
-                st.header("Register New Profile")
-                new_name = st.text_input("Enter Your Name", placeholder="E.g. Abhishke Gupta")  
+                with st.container(border=True):
+                 st.header("Register New Profile")
+                 new_name = st.text_input("Enter Your Name", placeholder="E.g. Abhishke Gupta")  
                 
-                st.subheader("Optional : Voice Enrollment")   
-                st.info("Enroll For Voice Only Attendance")
+                 st.subheader("Optional : Voice Enrollment")   
+                 st.info("Enroll For Voice Only Attendance")
                 
                 audio_data = None
                 
