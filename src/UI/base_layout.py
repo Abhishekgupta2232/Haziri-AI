@@ -59,7 +59,10 @@ def style_base_layout():
            @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
             
-          }
+          /* Hide Top Bar of streamlit */
+            #MainMenu, footer, header{
+                visibility: hidden;
+            }
 
           .block-container{
               padding-top:1.5rem !important;
