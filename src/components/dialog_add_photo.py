@@ -29,7 +29,7 @@ def add_photo_dialog():
         if cam_photo:
             st.session_state.attendance_images.append(Image.open(cam_photo))    
             st.toast("Photo Captured")
-            st.rerun  
+            st.rerun()  
     
     if st.session_state.photo_tab == "upload":
         uploaded_files = st.file_uploader("Choose Image File",type=["jpg", "png", "jpeg"], accept_multiple_files= True, key="dialog_upload")
