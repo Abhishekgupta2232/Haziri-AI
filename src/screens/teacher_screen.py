@@ -15,7 +15,7 @@ import pandas as pd
 from src.components.dialog_attendance_results import attendance_result_dialog
 from src.components.dialog_voice_attendance import voice_attendance_dialog
 from src.database.db import get_attendance_for_teacher
-
+from zoneinfo import ZoneInfo
 
 def teacher_screen():
     style_base_layout_dashboard()
@@ -156,7 +156,7 @@ def teacher_tab_take_attendance():
                     st.warning("No student enrolled In this course")
                 else:
                     results, attendance_to_log = [], []
-                    current_timestamp = datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
+                    current_timestamp = datetime.now(ZoneInfo("Asia/Kolkata")).strftime("%Y-%m-%dT%H:%M:%S")
             
                     for node in enrolled_students:
                         student = node["student"]
