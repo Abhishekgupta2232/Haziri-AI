@@ -43,7 +43,7 @@ def student_dashboard():
             stats_map = {}
             
             for log in logs:
-                sid = log["student_id"]
+                sid = log["subject_id"]
                 
                 if sid not in stats_map:
                     stats_map[sid] = {"total":0,"attended":0}
@@ -72,7 +72,7 @@ def student_dashboard():
                         code = sub["subject_code"],
                         section = sub["section"],
                         stats = [
-                            ("👤", "Total", stats["total"]),
+                            ("🗓️", "Total Classes", stats["total"]),
                             ("✅", "Attended", stats["attended"]),
                         ],
                         footer_callback=unenroll_button
